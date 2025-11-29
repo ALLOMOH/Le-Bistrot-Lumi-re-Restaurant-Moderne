@@ -24,7 +24,6 @@ Ce projet est une "Landing Page" moderne et responsive pour un restaurant, conç
 ### 1. Gestion du Thème (Theming)
 Le design system repose entièrement sur les variables CSS définies dans `:root`.
 * **Pourquoi ?** Permet de changer la charte graphique (couleurs, polices, espacements) en modifiant quelques lignes au début du fichier CSS ou dynamiquement via JS.
-* **Admin Panel** : Le "Customizer" inclus dans le site injecte directement des styles inline sur la balise `<html>`, surchargeant les variables CSS en temps réel.
 
 ### 2. Performance & Animations
 * **Parallaxe** : L'effet sur le Hero est calculé via `requestAnimationFrame` (implicite via l'event scroll optimisé) et utilise `transform: translate3d` pour forcer l'accélération matérielle (GPU).
