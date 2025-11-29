@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Bistrot Lumière - Cuisine moderne et élégante.">
+    <title>Le Bistrot Lumière | Restaurant Moderne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bistrot Lumière.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#reservation" class="btn-primary">Réserver</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="parallax-bg" id="hero-bg"></div>
+        <div class="hero-content reveal">
+            <h1>L'Élégance dans l'Assiette</h1>
+            <p>Une expérience culinaire moderne au cœur de la ville.</p>
+            <a href="#menu" class="btn-outline">Découvrir le Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container split-layout">
+            <div class="text-block reveal-left">
+                <h2>Notre Philosophie</h2>
+                <p>Au Bistrot Lumière, nous croyons en la simplicité sublimée. Nos ingrédients sont sourcés localement et préparés avec une précision moderne.</p>
+                <p>Chaque plat raconte une histoire, celle de la rencontre entre tradition et innovation.</p>
+            </div>
+            <div class="image-block reveal-right">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chef dressant une assiette" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title reveal">La Carte</h2>
+            <div class="menu-grid">
+                <article class="menu-card reveal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Salade composée" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Salade "Lumière"</h3>
+                            <span class="price">18€</span>
+                        </div>
+                        <p>Quinoa, avocat rôti, vinaigrette agrumes.</p>
+                    </div>
+                </article>
+                <article class="menu-card reveal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a7270028d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Risotto aux champignons" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Risotto Sauvage</h3>
+                            <span class="price">24€</span>
+                        </div>
+                        <p>Champignons des bois, parmesan 24 mois, huile de truffe.</p>
+                    </div>
+                </article>
+                <article class="menu-card reveal">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cocktail signature" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Le Signature</h3>
+                            <span class="price">12€</span>
+                        </div>
+                        <p>Gin, basilic frais, concombre, tonic artisanal.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section-padding">
+        <div class="container narrow-container reveal">
+            <h2 class="section-title">Réserver une table</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" required aria-label="Votre nom">
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required aria-label="Date de réservation">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Convives</label>
+                        <select id="guests" aria-label="Nombre de personnes">
+                            <option value="1">1 Personne</option>
+                            <option value="2" selected>2 Personnes</option>
+                            <option value="4">4 Personnes</option>
+                            <option value="6+">Plus de 6</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary full-width">Confirmer la réservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Bistrot Lumière.</h3>
+                <p>12 Rue de la Gastronomie, 75000 Paris</p>
+                <p>+33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Bistrot Lumière. Design par Gemini.
+        </div>
+    </footer>
+
+    <div id="admin-panel" class="admin-closed">
+        <div class="admin-toggle" id="admin-toggle">⚙️</div>
+        <h3>Customizer</h3>
+        <label>Couleur Principale</label>
+        <input type="color" id="color-picker" value="#d4af37"/>
+        <label>Couleur Fond Sombre</label>
+        <input type="color" id="bg-picker" value="#1a1a1a"/>
+        <button id="reset-theme">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
