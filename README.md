@@ -41,6 +41,8 @@ Le design system repose entièrement sur les variables CSS définies dans `:root
 ```text
 /
 ├── index.html      # Structure DOM et contenu textuel
-├── styles.css      # Feuilles de style, variables et animations
-├── script.js       # Logique parallaxe, observer et panel admin
+├── css/
+|    |── styles.css      # Feuilles de style, variables et animations
+├── js/
+|    |── script.js       # Logique parallaxe, observer et panel admin
 └── README.md       # Documentation technique
