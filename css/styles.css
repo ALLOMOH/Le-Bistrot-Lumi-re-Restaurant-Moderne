@@ -125,14 +125,16 @@ header.scrolled {
   gap: 2rem;
   align-items: center;
 }
-
+.burger{
+    display:none;
+    cursor:pointer;
+}
 .burger .line{
     width:30px;
     height:3px;
     background:white;
     margin:6px 0;
 }
-
 /* Hero Section avec Parallax */
 .hero {
   height: 100vh;
@@ -238,6 +240,7 @@ header.scrolled {
   max-width: 600px;
   margin: 0 auto;
 }
+
 .reservation-form input,
 .reservation-form select {
   width: 100%;
@@ -304,37 +307,6 @@ footer {
 .reveal-right.active {
   opacity: 1;
   transform: translate(0);
-}
-
-/* Admin Panel Styles */
-#admin-panel {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: white;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  z-index: 2000;
-  transition: transform 0.3s;
-}
-.admin-closed {
-  transform: translateX(calc(100% + 40px));
-}
-.admin-toggle {
-  position: absolute;
-  left: -50px;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  background: white;
-  text-align: center;
-  line-height: 40px;
-  font-size: 24px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */
