@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   // 1. Navigation Sticky
   const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
+        navbar.classList.add("scrolled");
+        navbar.style.color = "black";
     } else {
-      navbar.classList.remove("scrolled");
+        navbar.classList.remove("scrolled");
+        navbar.style.color = "white";
     }
   });
 
@@ -41,33 +44,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealElements.forEach((el) => revealOnScroll.observe(el));
 
-  // 4. Mini Admin Panel (Customizer)
-  const adminPanel = document.getElementById("admin-panel");
-  const adminToggle = document.getElementById("admin-toggle");
-  const colorPicker = document.getElementById("color-picker");
-  const bgPicker = document.getElementById("bg-picker");
-  const root = document.documentElement;
-
-  // Toggle Panel
-  adminToggle.addEventListener("click", () => {
-    adminPanel.classList.toggle("admin-closed");
-  });
-
-  // Change Primary Color
-  colorPicker.addEventListener("input", (e) => {
-    root.style.setProperty("--primary-color", e.target.value);
-  });
-
-  // Change Dark Background Color
-  bgPicker.addEventListener("input", (e) => {
-    root.style.setProperty("--bg-dark", e.target.value);
-  });
-
-  // Reset Theme
-  document.getElementById("reset-theme").addEventListener("click", () => {
-    root.style.removeProperty("--primary-color");
-    root.style.removeProperty("--bg-dark");
-    colorPicker.value = "#d4af37";
-    bgPicker.value = "#121212";
-  });
 });

@@ -6,11 +6,10 @@
     <meta name="description" content="Le Bistrot Lumière - Cuisine moderne et élégante.">
     <title>Le Bistrot Lumière | Restaurant Moderne</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <header id="navbar">
+    <header id="navbar" class="navbar" >
         <div class="container nav-container">
             <a href="#" class="logo">Bistrot Lumière.</a>
             <nav>
@@ -21,9 +20,9 @@
                     <li><a href="#reservation" class="btn-primary">Réserver</a></li>
                 </ul>
                 <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
             </nav>
         </div>
@@ -69,7 +68,7 @@
                 </article>
                 <article class="menu-card reveal">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a7270028d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Risotto aux champignons" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1606850246029-dd00bd5eff97?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Risotto aux champignons" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="card-header">
@@ -139,16 +138,6 @@
             &copy; 2023 Bistrot Lumière. Design par Gemini.
         </div>
     </footer>
-
-    <div id="admin-panel" class="admin-closed">
-        <div class="admin-toggle" id="admin-toggle">⚙️</div>
-        <h3>Customizer</h3>
-        <label>Couleur Principale</label>
-        <input type="color" id="color-picker" value="#d4af37"/>
-        <label>Couleur Fond Sombre</label>
-        <input type="color" id="bg-picker" value="#1a1a1a"/>
-        <button id="reset-theme">Reset</button>
-    </div>
 
     <script src="script.js"></script>
 </body>
